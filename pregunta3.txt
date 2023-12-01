@@ -1,0 +1,14 @@
+•Qué cambiaría en el código (Clases / Métodos) - No implementación.
+
+Primero, una verificación en pagos. Es decir, antes de realizar un pago, se debe verificar si el monto a transferir excede los 200 soles para el día (día actual). Si excede el límite, se debe rechazar la transacción y mandar una notificación al usuario. Además, un método extra para para rastrear la cantidad total transferida durante un día determinado.
+
+•Nuevos casos de prueba a adicionar.
+
+1.Verificar si una transferencia de 250 soles o mayor a 200 soles es rechazada adecuadamente y se muestra un mensaje apropiado al usuario.
+2.Para el caso de éxito se puede probar si una transferencia de exactamente 200 soles se realiza correctamente.
+
+•Cuánto riesgo hay de “romper” lo que ya funciona?
+
+Modificar un código en funcionamiento siempre conlleva el riesgo de introducir errores. Al añadir una nueva funcionalidad, como el límite de transferencia diario de 200 soles, es esencial minimizar los cambios en las áreas clave, como el método de pago y el seguimiento de límites. Al realizar pruebas exhaustivas con diferentes escenarios, como transferencias dentro, en el límite y fuera del límite, se puede mitigar el riesgo de interrumpir la funcionalidad existente.
+
+La realización de pruebas completas y continuas garantiza que las adiciones al código no afecten negativamente el funcionamiento previo. Esto asegura una implementación sólida del límite de transferencia diario sin comprometer la estabilidad del software.
